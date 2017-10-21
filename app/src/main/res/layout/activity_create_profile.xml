@@ -31,24 +31,26 @@
 
         <EditText
             android:id="@+id/nameFirst"
-            android:layout_width="wrap_content"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="@string/nameFirst"
+            android:textAlignment="center"
             android:textStyle="italic" />
 
         <EditText
             android:id="@+id/nameLast"
-            android:layout_width="wrap_content"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="@string/nameLast"
+            android:textAlignment="center"
             android:textStyle="italic" />
 
     </LinearLayout>
@@ -56,79 +58,69 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="horizontal"
         android:weightSum="1">
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="90dp">
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/spinner2"
+            android:layout_alignBottom="@+id/spinner2"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="6dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="@string/age"
+            android:textAlignment="center"
+            android:textStyle="italic" />
 
-            <EditText
-                android:id="@+id/age"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginStart="6dp"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="number"
-                android:text="@string/age"
-                android:textStyle="italic"
-                android:layout_alignBaseline="@+id/spinner2"
-                android:layout_alignBottom="@+id/spinner2"
-                android:layout_alignParentStart="true" />
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/weight"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="number"
+            android:text="@string/height"
+            android:textAlignment="center"
+            android:textStyle="italic" />
 
-            <Spinner
-                android:id="@+id/spinner2"
-                android:layout_width="100dp"
-                android:layout_height="60dp"
-                android:entries="@array/genderSpinner"
-                android:layout_marginEnd="133dp"
-                android:layout_centerVertical="true"
-                android:layout_alignParentEnd="true" />
-
-        </RelativeLayout>
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="26dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:inputType="number"
+            android:text="@string/weight"
+            android:textStyle="italic" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="316dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.22"
-        android:orientation="horizontal">
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
 
-        <RelativeLayout
-            android:layout_width="368dp"
-            android:layout_height="80dp">
-
-            <EditText
-                android:id="@+id/weight"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="26dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:inputType="number"
-                android:text="@string/weight"
-                android:textStyle="italic"
-                android:layout_centerVertical="true"
-                android:layout_alignParentEnd="true" />
-
-            <EditText
-                android:id="@+id/height"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:text="@string/height"
-                android:textStyle="italic"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_alignTop="@+id/weight"
-                android:layout_alignParentStart="true" />
-        </RelativeLayout>
-
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="173dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:entries="@array/genderSpinner" />
     </LinearLayout>
 
     <Button
