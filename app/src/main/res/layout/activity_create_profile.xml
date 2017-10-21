@@ -18,7 +18,7 @@
         android:fontFamily="monospace"
         android:gravity="center"
         android:text="@string/introText"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
         android:textSize="30sp"
         android:textStyle="bold|italic" />
 
@@ -118,10 +118,9 @@
 
     <Button
         android:id="@+id/CP1Button"
-        android:layout_width="373dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.07"
-        android:background="@android:drawable/alert_light_frame"
         android:onClick="saveUserInfo"
         android:text="@string/CP1Button" />
 
