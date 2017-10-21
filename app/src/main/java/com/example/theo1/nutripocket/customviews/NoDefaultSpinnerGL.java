@@ -1,6 +1,7 @@
 package com.example.theo1.nutripocket.customviews;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -105,6 +106,7 @@ public class NoDefaultSpinnerGL extends android.support.v7.widget.AppCompatSpinn
                                 Context.LAYOUT_INFLATER_SERVICE)).inflate(
                                 android.R.layout.simple_spinner_item,parent,false);
                 v.setText(R.string.goalPrompt);
+                v.setTextColor(Color.WHITE);
                 return v;
             }
             return obj.getView(position,convertView,parent);

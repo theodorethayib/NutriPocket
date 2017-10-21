@@ -1,12 +1,12 @@
 package com.example.theo1.nutripocket.customviews;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 
@@ -108,6 +108,7 @@ public class NoDefaultSpinnerG extends android.support.v7.widget.AppCompatSpinne
                                 Context.LAYOUT_INFLATER_SERVICE)).inflate(
                                 android.R.layout.simple_spinner_item,parent,false);
                 v.setText(R.string.genderPrompt);
+                v.setTextColor(Color.WHITE);
                 return v;
             }
             return obj.getView(position,convertView,parent);

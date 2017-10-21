@@ -3,12 +3,14 @@ package com.example.theo1.nutripocket;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -45,7 +47,6 @@ public class CreateProfileActivity extends AppCompatActivity {
         buttonContinue = (Button) findViewById(R.id.CP1Button);
         genderSpin = (Spinner) findViewById(R.id.gender);
 
-
         buttonContinue.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(CreateProfileActivity.this, CreateProfile2Activity.class);
@@ -55,10 +56,12 @@ public class CreateProfileActivity extends AppCompatActivity {
         });
         genderSpin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                ((TextView) adapterView.getChildAt(0)).setTextColor(Color.WHITE);
                 Log.d("HELP TAG", genderSpin.getSelectedItem().toString());
             }
 
             public void onNothingSelected(AdapterView<?> adapterView) {
+                ((TextView) adapterView.getChildAt(0)).setTextColor(Color.WHITE);
                 return;
             }
         });
