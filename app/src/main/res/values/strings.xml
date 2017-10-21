@@ -42,6 +42,8 @@
     <string name="modDesc">Moderate exercise or sports 3-5 days per week.</string>
     <string name="heavilyTitle">Very Active:</string>
     <string name="heavilyDesc">Hard exercise or sports 6-7 days per week.</string>
+    <string name="extTitle">Extremely Active:</string>
+    <string name="extDesc">Hard daily exercise or sports 2 times a day.</string>
 
 
     <string name="CP1Button">Continue</string>
