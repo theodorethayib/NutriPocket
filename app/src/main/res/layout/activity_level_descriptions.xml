@@ -4,40 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.theo1.nutripocket.activityLevelDescriptionsActivity">
+    tools:context="com.example.theo1.nutripocket.activityLevelDescriptionsActivity"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sedentaryTitle"/>
+        android:text="@string/sedentaryTitle"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sedentaryDesc" />
+        android:text="@string/sedentaryDesc"
+        android:layout_margin="5dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/lightlyTitle" />
+        android:text="@string/lightlyTitle"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/lightlyDesc"/>
+        android:text="@string/lightlyDesc"
+        android:layout_margin="5dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/modTitle"/>
+        android:text="@string/modTitle"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/modDesc"/>
+        android:text="@string/modDesc"
+        android:layout_margin="5dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/heavilyTitle"/>
+        android:text="@string/heavilyTitle"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/heavilyDesc"/>
+        android:text="@string/heavilyDesc"
+        android:layout_margin="5dp"/>
 
 
 </LinearLayout>
