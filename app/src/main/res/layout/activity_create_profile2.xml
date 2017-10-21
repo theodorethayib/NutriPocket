@@ -44,12 +44,15 @@
 
     <Button
         android:id="@+id/CP2Continue"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="48dp"
-        android:text="@string/CP2Button" />
+        android:text="@string/CP2Button"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/CP2Info"
