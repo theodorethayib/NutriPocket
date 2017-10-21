@@ -35,15 +35,15 @@
 
 
     <string name="sedentaryTitle">Sedentary: </string>
-    <string name="sedentaryDesc">Little to no exercise.</string>
+    <string name="sedentaryDesc">Little to no exercise at all.</string>
     <string name="lightlyTitle">Lightly active:</string>
-    <string name="lightlyDesc">Light to moderate exercise or sports 1&#8211;3 days per week.</string>
+    <string name="lightlyDesc">Light to moderate formal exercise 1&#8211;3 days per week.</string>
     <string name="modTitle">Moderately Active:</string>
-    <string name="modDesc">Moderate to intense formal exercise 3&#8211;5 times a week with a desk job.</string>
+    <string name="modDesc">Moderate to intense formal exercise 3&#8211;5 times a week.</string>
     <string name="heavilyTitle">Very Active:</string>
     <string name="heavilyDesc">Moderate to intense formal exercise 6&#8211;7 days per week.</string>
     <string name="extTitle">Extremely Active:</string>
-    <string name="extDesc">Hard daily exercise or sports 2 times a day.</string>
+    <string name="extDesc">Intense formal exercise 6&#8211;7 days per week.</string>
 
 
     <string name="CP1Button">Continue</string>
