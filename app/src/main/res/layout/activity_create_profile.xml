@@ -128,13 +128,14 @@
 
     <Button
         android:id="@+id/CP1Button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.07"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
         android:background="@color/Background"
+        android:elevation="0dp"
         android:onClick="saveUserInfo"
         android:text="@string/CP1Button"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/white"
         android:textSize="14sp"
         android:textStyle="bold" />
 
