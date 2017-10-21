@@ -43,6 +43,7 @@ public class CreateProfileActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         buttonContinue = (Button) findViewById(R.id.CP1Button);
         genderSpin = (Spinner) findViewById(R.id.gender);
+
         buttonContinue.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(CreateProfileActivity.this, CreateProfile2Activity.class);
@@ -60,11 +61,6 @@ public class CreateProfileActivity extends AppCompatActivity {
             }
         });
 
-        fName = (EditText) findViewById(R.id.nameFirst);
-        lName = (EditText) findViewById(R.id.nameLast);
-        age = (EditText) findViewById(R.id.age);
-        height = (EditText) findViewById(R.id.height);
-        weight = (EditText) findViewById(R.id.weight);
     }
 
         //Save Info
