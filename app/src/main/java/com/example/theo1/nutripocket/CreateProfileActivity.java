@@ -12,7 +12,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class CreateProfileActivity extends AppCompatActivity {
     Button buttonContinue;
@@ -68,6 +67,6 @@ public class CreateProfileActivity extends AppCompatActivity {
             editor.putString("weight", weight.getText().toString());
             editor.putString("gender", genderSpin.getSelectedItem().toString());
             editor.apply();
-            }
-    }
+        }
+}
 
