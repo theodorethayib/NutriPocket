@@ -44,4 +44,5 @@
 
     <string name="CP1Button">Continue</string>
     <string name="CP2Button">Submit</string>
+    <string name="introText">Tell us about yourself!</string>
 </resources>
