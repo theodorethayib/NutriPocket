@@ -6,12 +6,22 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.SpinnerAdapter;
 import android.widget.TextView;
+
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+import static com.example.theo1.nutripocket.R.array.genderSpinner;
 
 public class CreateProfileActivity extends AppCompatActivity {
     Button buttonContinue;
@@ -22,6 +32,8 @@ public class CreateProfileActivity extends AppCompatActivity {
     EditText height;
     EditText weight;
     Spinner genderSpin;
+
+
 
 
     @Override

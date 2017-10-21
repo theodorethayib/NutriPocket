@@ -7,7 +7,7 @@
     tools:context="com.example.theo1.nutripocket.CreateProfile2Activity">
 
 
-    <Spinner
+    <com.example.theo1.nutripocket.customviews.NoDefaultSpinnerAL
         android:id="@+id/activityLevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
         android:background="@android:drawable/ic_menu_help"
         android:layout_alignTop="@+id/activityLevel" />
 
-    <Spinner
+    <com.example.theo1.nutripocket.customviews.NoDefaultSpinnerGL
         android:id="@+id/goal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -5,7 +5,7 @@
     <string name="nameLast">Last Name</string>
 
     <string name="age">Age</string>
-    <string name="genderPrompt">Gender</string>
+    <string name="genderPrompt">Gender:</string>
     <string-array name="genderSpinner">
         <item>Male</item>
         <item>Female</item>
@@ -21,6 +21,7 @@
         <item>Moderate Activity</item>
         <item>Heavy Activity</item>
     </string-array>
+    <string name="activityLevelPrompt">Activity Level</string>
 
     <string name="goal">What is your goal?</string>
     <string-array name="goalSpinner">
@@ -28,6 +29,7 @@
         <item>Maintain Weight</item>
         <item>Gain Weight</item>
     </string-array>
+    <string name="goalPrompt">Goal</string>
 
 
 
@@ -45,4 +47,5 @@
     <string name="CP1Button">Continue</string>
     <string name="CP2Button">Submit</string>
     <string name="introText">Tell us about yourself!</string>
+
 </resources>
