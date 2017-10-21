@@ -4,21 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context="com.example.theo1.nutripocket.MainActivity"
-    android:orientation="vertical">
-
+    android:weightSum="1">
 
 
     <TextView
         android:id="@+id/calorieGoal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/calorieGoal" />
+        android:layout_weight="0.17"
+        android:text="@string/calorieGoal"
+        android:textAlignment="center"
+        android:textSize="24sp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="wrap_content"
+        android:layout_weight="0.26">
 
 
         <ProgressBar
@@ -29,14 +33,14 @@
 
 
         <TextView
-            android:background="#00000000"
-            android:layout_alignLeft="@id/calorieProgressBar"
-            android:layout_alignTop="@id/calorieProgressBar"
-            android:layout_alignRight="@id/calorieProgressBar"
-            android:layout_alignBottom="@id/calorieProgressBar"
-            android:text="@string/calorieCurrent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_width="wrap_content" />
+            android:layout_alignBottom="@id/calorieProgressBar"
+            android:layout_alignLeft="@id/calorieProgressBar"
+            android:layout_alignRight="@id/calorieProgressBar"
+            android:layout_alignTop="@id/calorieProgressBar"
+            android:background="#00000000"
+            android:text="@string/calorieCurrent" />
 
 
     </RelativeLayout>
@@ -46,12 +50,14 @@
         android:id="@+id/macroNutrientTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/macroNutrientTitle" />
+        android:text="@string/macroNutrientTitle"
+        android:layout_weight="0.14" />
 
     <LinearLayout
         android:id="@+id/mnGoalValues"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <TextView
@@ -79,6 +85,8 @@
         android:id="@+id/mnGoalTitles"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="0.07"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <TextView
@@ -105,15 +113,15 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/buttonCaloricBreakdown"/>
-
+        android:text="@string/buttonCaloricBreakdown" />
 
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="2"
-        android:orientation="horizontal">
+        android:layout_height="53dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="2">
 
 
         <RelativeLayout
@@ -128,18 +136,20 @@
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:background="#00000000"
-                android:layout_alignLeft="@id/logRect"
-                android:layout_alignTop="@id/logRect"
-                android:layout_alignRight="@id/logRect"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
                 android:layout_alignBottom="@id/logRect"
+                android:layout_alignLeft="@id/logRect"
+                android:layout_alignRight="@id/logRect"
+                android:background="#00000000"
+                android:gravity="center_vertical"
                 android:text="@string/logRect"
-                android:layout_height="match_parent"
-                android:layout_width="wrap_content" />
+                android:textAlignment="center" />
 
         </RelativeLayout>
 
         <Button
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -152,20 +162,20 @@
                 android:id="@+id/prefRect"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
             <TextView
-                android:background="#00000000"
-                android:layout_alignLeft="@id/prefRect"
-                android:layout_alignTop="@id/prefRect"
-                android:layout_alignRight="@id/prefRect"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
                 android:layout_alignBottom="@id/prefRect"
+                android:layout_alignLeft="@id/prefRect"
+                android:layout_alignRight="@id/prefRect"
+                android:background="#00000000"
+                android:gravity="center_vertical"
                 android:text="@string/prefRect"
-                android:layout_height="match_parent"
-                android:layout_width="wrap_content" />
+                android:textAlignment="center" />
 
-    </RelativeLayout>
+        </RelativeLayout>
     </LinearLayout>
-
-
 
 
 </LinearLayout>
