@@ -128,7 +128,13 @@
             android:layout_height="50dp"
             android:layout_marginLeft="5dp"
             android:entries="@array/genderSpinner" />
+
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_margin="10dp"/>
 
     <Button
         android:id="@+id/CP1Button"
