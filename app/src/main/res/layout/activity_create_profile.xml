@@ -7,7 +7,8 @@
     android:gravity="top|center"
     android:orientation="vertical"
     android:weightSum="1"
-    tools:context="com.example.theo1.nutripocket.CreateProfileActivity">
+    tools:context="com.example.theo1.nutripocket.CreateProfileActivity"
+>
 
     <TextView
         android:id="@+id/textView"
@@ -22,7 +23,7 @@
         android:textStyle="bold|italic" />
 
     <LinearLayout
-        android:layout_width="470dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_weight="0.06">
