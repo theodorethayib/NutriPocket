@@ -8,7 +8,7 @@
 
 
     <LinearLayout
-        android:id="@+id/acp2top"
+        android:id="@+id/CP2top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -23,6 +23,7 @@
             android:layout_height="wrap_content"
             android:entries="@array/activitySpinner" />
         <Button
+            android:id="@+id/CP2Info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -32,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@id/acp2top"
+        android:layout_below="@id/CP2top"
         android:id="@+id/linearLayout">
 
         <TextView

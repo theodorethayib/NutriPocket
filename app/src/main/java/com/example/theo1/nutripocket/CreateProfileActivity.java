@@ -7,14 +7,15 @@ import android.view.View;
 import android.widget.Button;
 
 public class CreateProfileActivity extends AppCompatActivity {
-    Button button;
+    Button buttonContinue;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_profile);
-        button = (Button) findViewById(R.id.CP1Button);
+        getSupportActionBar().hide();
+        buttonContinue = (Button) findViewById(R.id.CP1Button);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        buttonContinue.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(CreateProfileActivity.this, CreateProfile2Activity.class);
                 startActivity(intent);

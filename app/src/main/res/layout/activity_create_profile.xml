@@ -84,7 +84,7 @@
                 android:layout_marginStart="116dp"
                 android:layout_centerVertical="true"
                 android:layout_toEndOf="@+id/age"
-                android:entries="@array/genderSpinner"/>
+                android:entries="@array/genderSpinner" />
 
         </RelativeLayout>
 
