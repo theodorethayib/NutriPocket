@@ -117,7 +117,7 @@
     <LinearLayout
         android:layout_width="316dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.23"
+        android:layout_weight="0.17"
         android:gravity="center"
         android:orientation="horizontal"
         android:weightSum="1">
@@ -141,6 +141,7 @@
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
+        android:layout_marginTop="40dp"
         android:background="@color/Background"
         android:elevation="0dp"
         android:onClick="saveUserInfo"
