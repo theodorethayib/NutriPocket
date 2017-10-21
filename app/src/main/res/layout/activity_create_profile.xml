@@ -60,7 +60,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:layout_weight="0.05">
 
 
         <EditText
@@ -110,12 +111,13 @@
     <LinearLayout
         android:layout_width="316dp"
         android:layout_height="wrap_content"
+        android:layout_weight="0.23"
         android:gravity="center"
         android:orientation="horizontal"
         android:weightSum="1">
 
         <Spinner
-            android:id="@+id/spinner2"
+            android:id="@+id/gender"
             android:layout_width="173dp"
             android:layout_height="50dp"
             android:layout_alignParentEnd="true"

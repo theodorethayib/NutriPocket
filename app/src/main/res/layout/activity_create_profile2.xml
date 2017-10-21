@@ -7,51 +7,36 @@
     tools:context="com.example.theo1.nutripocket.CreateProfile2Activity">
 
 
+    <Spinner
+        android:id="@+id/activityLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="78dp"
+        android:entries="@array/activitySpinner"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
     <LinearLayout
         android:id="@+id/CP2top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="39dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/activityLevel" />
-
-        <Spinner
-            android:id="@+id/activityLevel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:entries="@array/activitySpinner" />
-        <Button
-            android:id="@+id/CP2Info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="41dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/linearLayout"
-        android:layout_marginTop="145dp"
-        android:layout_below="@+id/CP2top"
-        android:layout_alignParentStart="true">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/goal" />
-
-        <Spinner
-            android:id="@+id/goal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:entries="@array/goalSpinner"
-            android:spinnerMode="dropdown" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/CP2Info"
+        android:layout_marginTop="27dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
 
     </LinearLayout>
@@ -60,10 +45,54 @@
         android:id="@+id/CP2Continue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/CP2Button"
-        android:layout_marginTop="85dp"
-        android:layout_below="@+id/linearLayout"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:text="@string/CP2Button" />
+
+    <Button
+        android:id="@+id/CP2Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/activityLevel"
+        android:layout_toEndOf="@+id/activityLevel"
+        android:background="@android:drawable/ic_menu_help"
+        android:layout_alignTop="@+id/activityLevel" />
+
+    <Spinner
+        android:id="@+id/goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/goalSpinner"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/CP2Info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:text="@string/activityLevel"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/goal"
+        android:layout_centerVertical="true"
+        android:text="@string/goal"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="italic" />
 
 
 </RelativeLayout>
