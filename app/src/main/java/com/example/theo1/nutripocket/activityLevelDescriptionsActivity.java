@@ -1,6 +1,5 @@
 package com.example.theo1.nutripocket;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,8 +19,7 @@ public class activityLevelDescriptionsActivity extends AppCompatActivity {
 
         returnButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(activityLevelDescriptionsActivity.this, CreateProfile2Activity.class);
-                startActivity(intent);
+                finish();
 
             }
         });
