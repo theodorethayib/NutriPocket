@@ -121,7 +121,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.07"
+        android:background="@color/Background"
         android:onClick="saveUserInfo"
-        android:text="@string/CP1Button" />
+        android:text="@string/CP1Button"
+        android:textColor="@android:color/background_light" />
 
 </LinearLayout>
