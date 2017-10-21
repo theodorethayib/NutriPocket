@@ -44,6 +44,7 @@
     <string name="heavilyDesc">Moderate to intense formal exercise 6&#8211;7 days per week.</string>
     <string name="extTitle">Extremely Active:</string>
     <string name="extDesc">Intense formal exercise 6&#8211;7 days per week.</string>
+    <string name="noticeDesc">Note: If your job is physically intensive, choose the activity level one step higher than you would normally pick based on formal exercise during the week.</string>
 
 
     <string name="CP1Button">Continue</string>

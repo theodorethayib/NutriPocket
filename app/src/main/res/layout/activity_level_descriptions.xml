@@ -6,25 +6,33 @@
     android:layout_height="match_parent"
     tools:context="com.example.theo1.nutripocket.activityLevelDescriptionsActivity"
     android:orientation="vertical"
-    android:layout_margin="10dp">
+    android:layout_margin="10dp"
+    android:weightSum="1">
 
 
-
-
-
-    <Button
-        android:id="@+id/returnButton"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true" />
+        android:orientation="horizontal"
+        android:layout_weight="0.04">
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/sedentaryTitle"
+            android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/sedentaryTitle"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp" />
+        <Button
+            android:id="@+id/returnButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:drawable/presence_offline" />
+    </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -74,6 +82,14 @@
         android:layout_height="wrap_content"
         android:text="@string/extDesc"
         android:layout_margin="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/noticeDesc"
+        android:textSize="12sp"
+        android:textStyle="italic" />
 
 
 </LinearLayout>
