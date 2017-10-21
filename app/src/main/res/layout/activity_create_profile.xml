@@ -124,6 +124,8 @@
         android:background="@color/Background"
         android:onClick="saveUserInfo"
         android:text="@string/CP1Button"
-        android:textColor="@android:color/background_light" />
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        android:textStyle="italic" />
 
 </LinearLayout>
