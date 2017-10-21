@@ -4,7 +4,7 @@
     <string name="nameFirst">First Name</string>
     <string name="nameLast">Last Name</string>
 
-    <string name="age">Age</string>
+    <string name="age">Age (Year)</string>
     <string name="genderPrompt">&#160;&#160;Gender:</string>
     <string-array name="genderSpinner">
         <item>&#160;&#160;&#160;&#160;&#160;Male</item>

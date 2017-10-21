@@ -21,6 +21,7 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+import static android.R.id.list;
 import static com.example.theo1.nutripocket.R.array.genderSpinner;
 
 public class CreateProfileActivity extends AppCompatActivity {
@@ -43,6 +44,7 @@ public class CreateProfileActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         buttonContinue = (Button) findViewById(R.id.CP1Button);
         genderSpin = (Spinner) findViewById(R.id.gender);
+
 
         buttonContinue.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
