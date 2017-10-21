@@ -45,6 +45,11 @@
             android:layout_height="wrap_content"
             android:text="@string/sedentaryDesc"
             android:textColor="@color/regularText" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -69,6 +74,11 @@
                 android:layout_margin="5dp"
                 android:text="@string/lightlyDesc"
                 android:textColor="@color/regularText" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
 
         </LinearLayout>
 
@@ -94,6 +104,11 @@
                 android:layout_margin="5dp"
                 android:text="@string/modDesc"
                 android:textColor="@color/regularText" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
 
         </LinearLayout>
 
@@ -119,6 +134,11 @@
                 android:layout_margin="5dp"
                 android:text="@string/heavilyDesc"
                 android:textColor="@color/regularText" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
         </LinearLayout>
 
         <LinearLayout
@@ -143,6 +163,11 @@
                 android:layout_margin="5dp"
                 android:text="@string/extDesc"
                 android:textColor="@color/regularText" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
         </LinearLayout>
 
         <TextView
