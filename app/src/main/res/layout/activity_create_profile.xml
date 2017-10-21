@@ -135,7 +135,7 @@
         android:elevation="0dp"
         android:onClick="saveUserInfo"
         android:text="@string/CP1Button"
-        android:textColor="@android:color/white"
+        android:textColor="@color/emphasisText"
         android:textSize="14sp"
         android:textStyle="bold" />
 
