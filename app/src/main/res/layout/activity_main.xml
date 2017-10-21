@@ -1,9 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.theo1.nutripocket.MainActivity">
+    tools:context="com.example.theo1.nutripocket.MainActivity"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/calorieGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calorieGoal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ProgressBar
+            android:id="@+id/calorieProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:background="#00000000"
+            android:layout_alignLeft="@id/calorieProgressBar"
+            android:layout_alignTop="@id/calorieProgressBar"
+            android:layout_alignRight="@id/calorieProgressBar"
+            android:layout_alignBottom="@id/calorieProgressBar"
+            android:text="@string/calorieCurrent"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/macroNutrientTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/macroNutrientTitle" />
+
+    <LinearLayout
+        android:id="@+id/mnGoalValues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/carbValueGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/carbValueGoal" />
+
+        <TextView
+            android:id="@+id/proteinValueGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/proteinValueGoal" />
+
+        <TextView
+            android:id="@+id/fatValueGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fatValueGoal" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mnGoalTitles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/carbGoalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/carbGoalTitle" />
+
+        <TextView
+            android:id="@+id/proteinGoalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/proteinGoalTitle" />
+
+        <TextView
+            android:id="@+id/fatGoalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fatGoalTitle" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonCaloricBreakdown"/>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <View
+                android:id="@+id/logRect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:background="#00000000"
+                android:layout_alignLeft="@id/logRect"
+                android:layout_alignTop="@id/logRect"
+                android:layout_alignRight="@id/logRect"
+                android:layout_alignBottom="@id/logRect"
+                android:text="@string/logRect"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content" />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/prefRect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:background="#00000000"
+                android:layout_alignLeft="@id/prefRect"
+                android:layout_alignTop="@id/prefRect"
+                android:layout_alignRight="@id/prefRect"
+                android:layout_alignBottom="@id/prefRect"
+                android:text="@string/prefRect"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content" />
+
+    </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

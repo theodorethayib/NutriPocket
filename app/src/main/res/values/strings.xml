@@ -51,4 +51,17 @@
     <string name="CP2Button">Finish</string>
     <string name="introText">Tell us about yourself!</string>
 
+    <string name="calorieGoal">Daily Calorie Goal: %d</string>
+    <string name="calorieCurrent">%d</string>
+    <string name="macroNutrientTitle">Macronutrients</string>
+    <string name="carbValueGoal">%d</string>
+    <string name="proteinValueGoal">%d</string>
+    <string name="fatValueGoal">%d</string>
+    <string name="carbGoalTitle">Carbs</string>
+    <string name="proteinGoalTitle">Proteins</string>
+    <string name="fatGoalTitle">Fats</string>
+    <string name="buttonCaloricBreakdown">Caloric Breakdown</string>
+    <string name="logRect">Log</string>
+    <string name="prefRect">Prefernces</string>
+
 </resources>
