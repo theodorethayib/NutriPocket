@@ -4,85 +4,131 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.theo1.nutripocket.CreateProfileActivity"
+    android:gravity="top|center"
     android:orientation="vertical"
-    android:gravity="center">
+    android:weightSum="1"
+    tools:context="com.example.theo1.nutripocket.CreateProfileActivity">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-
-    <EditText
-        android:id="@+id/nameFirst"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/nameFirst"
-        android:layout_margin="5dp"/>
-
-    <EditText
-        android:id="@+id/nameLast"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/nameLast"
-        android:layout_margin="5dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-
-    <EditText
-        android:id="@+id/age"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="number"
-        android:text="@string/age"
-        android:layout_margin="5dp"
-        android:layout_marginRight="15dp" />
-
-    <Spinner
-        android:spinnerMode="dropdown"
-        android:id="@+id/gender"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/genderSpinner" />
-
-    </LinearLayout>
+        android:layout_weight="0.21"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Tell Us About Yourself"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/height"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:text="@string/height"
-            android:layout_margin="5dp"/>
 
         <EditText
-            android:id="@+id/weight"
+            android:id="@+id/nameFirst"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="number"
-            android:text="@string/weight"
-            android:layout_margin="5dp"/>
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/nameFirst"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/nameLast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/nameLast"
+            android:textStyle="italic" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:text="@string/age"
+                android:textStyle="italic" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="116dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/age" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="368dp"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/height"
+                android:layout_alignBottom="@+id/height"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="72dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:inputType="number"
+                android:text="@string/weight"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="number"
+                android:text="@string/height"
+                android:textStyle="italic" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/alert_light_frame"
+        android:text="@string/CP1Button" />
 
 </LinearLayout>
