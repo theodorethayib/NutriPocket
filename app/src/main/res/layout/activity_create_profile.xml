@@ -54,10 +54,11 @@
         android:layout_marginRight="15dp" />
 
     <Spinner
+        android:spinnerMode="dropdown"
         android:id="@+id/gender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/gender"
+        android:entries="@array/genderSpinner"
         android:prompt="@string/genderPrompt" />
 
     </LinearLayout>
