@@ -35,13 +35,14 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/regularText"
             android:ems="10"
-            android:inputType="textPersonName"
             android:hint="@string/nameFirst"
+            android:inputType="textPersonName"
             android:textAlignment="center"
-            android:textStyle="italic"
             android:textColor="@color/regularText"
-            android:textColorHint="@color/regularText"/>
+            android:textColorHint="@color/regularText"
+            android:textStyle="italic" />
 
         <EditText
             android:id="@+id/nameLast"
@@ -49,13 +50,14 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/emphasisText"
             android:ems="10"
-            android:inputType="textPersonName"
             android:hint="@string/nameLast"
+            android:inputType="textPersonName"
             android:textAlignment="center"
-            android:textStyle="italic"
             android:textColor="@color/regularText"
-            android:textColorHint="@color/regularText"/>
+            android:textColorHint="@color/regularText"
+            android:textStyle="italic" />
 
     </LinearLayout>
 
@@ -75,13 +77,14 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginStart="6dp"
+            android:backgroundTint="@color/emphasisText"
             android:ems="10"
-            android:inputType="number"
             android:hint="@string/age"
+            android:inputType="number"
             android:textAlignment="center"
-            android:textStyle="italic"
             android:textColor="@color/regularText"
-            android:textColorHint="@color/regularText"/>
+            android:textColorHint="@color/regularText"
+            android:textStyle="italic" />
 
         <EditText
             android:id="@+id/height"
@@ -89,12 +92,13 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:inputType="number"
+            android:backgroundTint="@color/emphasisText"
             android:hint="@string/height"
+            android:inputType="number"
             android:textAlignment="center"
-            android:textStyle="italic"
             android:textColor="@color/regularText"
-            android:textColorHint="@color/regularText"/>
+            android:textColorHint="@color/regularText"
+            android:textStyle="italic" />
 
         <EditText
             android:id="@+id/weight"
@@ -103,11 +107,12 @@
             android:layout_marginEnd="26dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:inputType="number"
+            android:backgroundTint="@color/emphasisText"
             android:hint="@string/weight"
-            android:textStyle="italic"
+            android:inputType="number"
             android:textColor="@color/regularText"
-            android:textColorHint="@color/regularText"/>
+            android:textColorHint="@color/regularText"
+            android:textStyle="italic" />
 
     </LinearLayout>
 
@@ -123,8 +128,8 @@
             android:id="@+id/gender"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:entries="@array/genderSpinner"
-            android:layout_marginLeft="5dp"/>
+            android:layout_marginLeft="5dp"
+            android:entries="@array/genderSpinner" />
     </LinearLayout>
 
     <Button

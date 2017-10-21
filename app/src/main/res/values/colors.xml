@@ -6,7 +6,7 @@
 
     <color name="Background">#d50000</color>
     <color name="darkBackground">#e63333</color>
-    <color name="emphasisText">#FFFFFF</color>
-    <color name="regularText">#FAFAFA</color>
+    <color name="emphasisText">#ffffff</color>
+    <color name="regularText">#fafafa</color>
 
 </resources>
