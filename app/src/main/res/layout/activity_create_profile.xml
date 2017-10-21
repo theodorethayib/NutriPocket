@@ -22,10 +22,10 @@
         android:textStyle="bold|italic" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="470dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_weight="0.10">
+        android:layout_weight="0.06">
 
 
         <EditText
@@ -61,30 +61,32 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="71dp">
+            android:layout_height="90dp">
 
             <EditText
                 android:id="@+id/age"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginStart="6dp"
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="number"
                 android:text="@string/age"
-                android:textStyle="italic" />
+                android:textStyle="italic"
+                android:layout_alignBaseline="@+id/spinner2"
+                android:layout_alignBottom="@+id/spinner2"
+                android:layout_alignParentStart="true" />
 
             <Spinner
                 android:id="@+id/spinner2"
                 android:layout_width="100dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="116dp"
+                android:entries="@array/genderSpinner"
+                android:layout_marginEnd="133dp"
                 android:layout_centerVertical="true"
-                android:layout_toEndOf="@+id/age"
-                android:entries="@array/genderSpinner" />
+                android:layout_alignParentEnd="true" />
 
         </RelativeLayout>
 
@@ -93,7 +95,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.11"
+        android:layout_weight="0.22"
         android:orientation="horizontal">
 
         <RelativeLayout
@@ -104,33 +106,36 @@
                 android:id="@+id/weight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/height"
-                android:layout_alignBottom="@+id/height"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="72dp"
+                android:layout_marginEnd="26dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:inputType="number"
                 android:text="@string/weight"
-                android:textStyle="italic" />
+                android:textStyle="italic"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
 
             <EditText
                 android:id="@+id/height"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
                 android:inputType="number"
                 android:text="@string/height"
-                android:textStyle="italic" />
+                android:textStyle="italic"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignTop="@+id/weight"
+                android:layout_alignParentStart="true" />
         </RelativeLayout>
 
     </LinearLayout>
 
     <Button
         android:id="@+id/CP1Button"
-        android:layout_width="match_parent"
+        android:layout_width="373dp"
         android:layout_height="wrap_content"
         android:background="@android:drawable/alert_light_frame"
-        android:text="@string/CP1Button" />
+        android:text="@string/CP1Button"
+        android:layout_weight="0.07" />
 
 </LinearLayout>
