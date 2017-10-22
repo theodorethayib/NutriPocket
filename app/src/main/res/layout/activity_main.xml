@@ -31,7 +31,8 @@
             android:id="@+id/calorieProgressBar"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
-            android:layout_height="100dp" />
+            android:layout_height="100dp"
+            android:max="2000"/>
 
         <TextView
             android:id="@+id/textView4"
