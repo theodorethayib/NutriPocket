@@ -24,6 +24,7 @@ public class calculateCaloricGoal {
         weight = Integer.parseInt(userInfo[2]);
         gender = Boolean.parseBoolean(userInfo[3]);
         activityLevel = userInfo[4];
+        goal = userInfo[5];
 
         final String firstLevel = "Sendentary";
         final String secondLevel = "Light Activity";
@@ -35,7 +36,7 @@ public class calculateCaloricGoal {
         switch (activityLevel) {
             case firstLevel:
                 userActivity = 1;
-                break;;
+                break;
             case secondLevel:
                 userActivity = 2;
                 break;
@@ -46,6 +47,11 @@ public class calculateCaloricGoal {
                 userActivity = 4;
                 break;
         };
+
+        final String oneLevel = "Lose weight";
+        final String twoLevel = "Maintain weight";
+        final String threeLevel = "Gain weight";
+
 
     }
 
