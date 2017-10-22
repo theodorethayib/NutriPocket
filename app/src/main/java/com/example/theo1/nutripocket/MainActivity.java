@@ -44,6 +44,6 @@ public class MainActivity extends AppCompatActivity {
 
         calculateCaloricGoal calGoal = new calculateCaloricGoal(userInfo);
         int goalAmount = calGoal.calculate();
-        calorieGoal.setText(String.valueOf(goalAmount));
+        calorieGoal.setText("Daily Calorie Goal: " + String.valueOf(goalAmount));
    }
 }
