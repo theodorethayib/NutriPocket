@@ -20,14 +20,15 @@
         <item>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Light Activity</item>
         <item>Moderate Activity</item>
         <item>&#160;&#160;&#160;&#160;&#160;&#160;Heavy Activity</item>
+        <item>&#160;&#160;Extreme Activity</item>
     </string-array>
     <string name="activityLevelPrompt">&#160;&#160;&#160;&#160;&#160;&#160;Activity Level:</string>
 
     <string name="goal">What is your goal?</string>
     <string-array name="goalSpinner">
-        <item>&#160;&#160;&#160;&#160;&#160;&#160;Lose Weight</item>
+        <item>&#160;&#160;&#160;&#160;&#160;&#160;&#160;Lose Weight</item>
         <item>Maintain Weight</item>
-        <item>&#160;&#160;&#160;&#160;&#160;&#160;Gain Weight</item>
+        <item>&#160;&#160;&#160;&#160;&#160;&#160;&#160;Gain Weight</item>
     </string-array>
     <string name="goalPrompt">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Goal:</string>
 

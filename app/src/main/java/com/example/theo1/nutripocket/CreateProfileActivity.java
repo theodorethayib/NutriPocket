@@ -57,7 +57,7 @@ public class CreateProfileActivity extends AppCompatActivity {
                 saveUserInfo();
 
                 Intent intent = new Intent(CreateProfileActivity.this, CreateProfile2Activity.class);
-//                intent.putExtra("userInfo", new String[] {age.getText().toString(), weight.getText().toString(), height.getText().toString() } );
+                intent.putExtra("userInfo", new String[] {age.getText().toString(), weight.getText().toString(), height.getText().toString() } );
                 startActivity(intent);
 
             }

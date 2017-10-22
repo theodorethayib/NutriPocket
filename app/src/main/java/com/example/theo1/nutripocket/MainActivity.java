@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         prefTitle.setText(age);
 
 
-        calculateCaloricGoal calGoal = new calculateCaloricGoal(userInfo);
-        int goalAmount = calGoal.calculate();
+//        calculateCaloricGoal calGoal = new calculateCaloricGoal(userInfo);
+//        int goalAmount = calGoal.calculate();
    }
 }
