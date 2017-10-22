@@ -65,7 +65,7 @@
         android:id="@+id/bodyType"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:entries="@array/goalSpinner"
+        android:entries="@array/bodyTypeSpinner"
         android:spinnerMode="dropdown"
         android:layout_below="@+id/textView13"
         android:layout_alignStart="@+id/activityLevel"

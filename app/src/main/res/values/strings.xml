@@ -26,9 +26,9 @@
 
     <string name="bodyType">What is your body type?</string>
     <string-array name="bodyTypeSpinner">
-        <item>&#160;&#160;&#160;&#160;&#160;&#160;&#160;Lose Weight</item>
-        <item>Maintain Weight</item>
-        <item>&#160;&#160;&#160;&#160;&#160;&#160;&#160;Gain Weight</item>
+        <item>&#160;&#160;&#160;&#160;&#160;&#160;&#160;Ectomorph</item>
+        <item>Mesomorph</item>
+        <item>&#160;&#160;&#160;&#160;&#160;&#160;&#160;Endomorph</item>
     </string-array>
     <string name="bodyTypePrompt">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Body Type:</string>
 
