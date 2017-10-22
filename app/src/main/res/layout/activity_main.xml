@@ -31,11 +31,10 @@
             android:id="@+id/calorieProgressBar"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:max="2000"/>
+            android:layout_height="100dp" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/currentCalories"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_alignBottom="@id/calorieProgressBar"
