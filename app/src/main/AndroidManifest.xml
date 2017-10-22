@@ -33,7 +33,11 @@
         <activity android:name=".CreateProfile2Activity" />
         <activity android:name=".activityLevelDescriptionsActivity" />
         <activity android:name=".log" />
-        <activity android:name=".BodyTypeDescription"></activity>
+        <activity android:name=".BodyTypeDescription" />
+        <activity
+            android:name=".preferencesActivity"
+            android:label="@string/title_activity_preferences" />
+        <activity android:name=".Preferences"></activity>
     </application>
 
 </manifest>

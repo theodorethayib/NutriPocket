@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 import android.widget.Button;
+import android.widget.Toast;
+
 import static android.util.Log.d;
 
 public class MainActivity extends AppCompatActivity {
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
         breakdownButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 calorieCount += 25;
@@ -61,6 +64,10 @@ public class MainActivity extends AppCompatActivity {
         String goal = sharedPrefs.getString("goal", "");
 
 
+        String fName = sharedPrefs.getString("firstName", "");
+        String lName = sharedPrefs.getString("lastName", "");
+
+
         String[] userInfo = new String[] {age, height, weight, gender, activityLevel, goal};
 
         //prefTitle.setText(age);
@@ -70,5 +77,9 @@ public class MainActivity extends AppCompatActivity {
         int goalAmount = calGoal.calculate();
         calorieGoal.setText("Daily Calorie Goal: " + String.valueOf(goalAmount));
         calorieProgressBar.setMax(goalAmount);
-   }
+
+
+        Toast.makeText(getApplicationContext(),"Welcome, " + fName + " " + lName + "!", Toast.LENGTH_SHORT).show();
+
+    }
 }

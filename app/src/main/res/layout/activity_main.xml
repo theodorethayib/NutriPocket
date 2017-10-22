@@ -29,11 +29,13 @@
 
         <ProgressBar
             android:id="@+id/calorieProgressBar"
-            android:scaleY="5"
+            android:scaleY="10"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:progressBackgroundTint="@color/lightGrey"
+            android:progressTint="@color/darkBackground"/>
 
         <TextView
             android:id="@+id/currentCalories"
