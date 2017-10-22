@@ -54,9 +54,11 @@
     <string name="noticeDesc">Note: If your job is physically intensive, choose the activity level one step higher than you would normally pick based on formal exercise during the week.</string>
 
     <string name="ectomorphTitle">Ectomorph: </string>
-    <string name="ectomorphDesc">Thin and lean with long limbs; struggles to gain both body fat and muscle mass.</string>
+    <string name="ectomorphDesc">Thin and lean with long limbs; usually has a fast metabolism and struggles to gain both body fat and muscle mass.</string>
     <string name="mesomorphTitle">Mesomorph: </string>
+    <string name="mesomorphDesc">Strong rectangular shaped body with well defined muscles; gains muscle easily and gains fat more easily than ectomorphs. </string>
     <string name="endomorphTitle">Endomorph: </string>
+    <string name="endomorphDesc">Soft and round body with muscles that are not well defined; usually has a slow metabolism and gains muscle and fat easily but finds it hard to lose fat.</string>
 
 
     <string name="CP1Button">Continue</string>

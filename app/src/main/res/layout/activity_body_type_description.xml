@@ -27,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/sedentaryTitle"
+                android:text="@string/ectomorphTitle"
                 android:textColor="@color/emphasisText"
                 android:textStyle="bold" />
 
@@ -43,7 +43,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sedentaryDesc"
+            android:text="@string/ectomorphDesc"
             android:textColor="@color/regularText" />
         <View
             android:layout_width="match_parent"
@@ -62,7 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="@string/lightlyTitle"
+                android:text="@string/mesomorphTitle"
 
                 android:textColor="@color/emphasisText"
                 android:textStyle="bold" />
@@ -72,7 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="@string/lightlyDesc"
+                android:text="@string/mesomorphDesc"
                 android:textColor="@color/regularText" />
             <View
                 android:layout_width="match_parent"
@@ -93,7 +93,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="@string/modTitle"
+                android:text="@string/endomorphTitle"
                 android:textColor="@color/emphasisText"
                 android:textStyle="bold" />
 
@@ -102,7 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="@string/modDesc"
+                android:text="@string/endomorphDesc"
                 android:textColor="@color/regularText" />
             <View
                 android:layout_width="match_parent"
