@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     Button breakdownButton;
     TextView currentCalories;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
         String activityLevel = sharedPrefs.getString("activityLevel", "");
         String goal = sharedPrefs.getString("goal", "");
 
+        String bodyType = sharedPrefs.getString("bodyType", "");
+
 
         String fName = sharedPrefs.getString("firstName", "");
         String lName = sharedPrefs.getString("lastName", "");
@@ -78,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
         calorieGoal.setText("Daily Calorie Goal: " + String.valueOf(goalAmount));
         calorieProgressBar.setMax(goalAmount);
 
+        String[] nutriuserInfo = new String[] {String.valueOf(goalAmount), bodyType};
 
         Toast.makeText(getApplicationContext(),"Welcome, " + fName + " " + lName + "!", Toast.LENGTH_SHORT).show();
 

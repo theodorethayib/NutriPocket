@@ -38,6 +38,7 @@ public class CreateProfileActivity extends AppCompatActivity {
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,7 +58,6 @@ public class CreateProfileActivity extends AppCompatActivity {
                 saveUserInfo();
 
                 Intent intent = new Intent(CreateProfileActivity.this, CreateProfile2Activity.class);
-                intent.putExtra("userInfo", new String[] {age.getText().toString(), weight.getText().toString(), height.getText().toString() } );
                 startActivity(intent);
 
             }
@@ -65,7 +65,6 @@ public class CreateProfileActivity extends AppCompatActivity {
         genderSpin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 ((TextView) adapterView.getChildAt(0)).setTextColor(Color.WHITE);
-                Log.d("HELP TAG", genderSpin.getSelectedItem().toString());
             }
 
             public void onNothingSelected(AdapterView<?> adapterView) {

@@ -38,6 +38,7 @@
             android:progressTint="@color/darkBackground"/>
 
         <TextView
+            android:layout_width="wrap_content"
             android:id="@+id/currentCalories"
             android:layout_height="100dp"
             android:layout_alignBottom="@id/calorieProgressBar"

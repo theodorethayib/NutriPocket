@@ -32,8 +32,9 @@ public class CreateProfile2Activity extends AppCompatActivity {
         CP2Info = (Button) findViewById(R.id.CP2Info);
         CP2Info2 = (Button) findViewById(R.id.CP2Info2);
         activityLevel = (Spinner) findViewById(R.id.activityLevel);
-        goal = (Spinner) findViewById(R.id.goal);
         bodyType = (Spinner) findViewById(R.id.bodyType);
+        goal = (Spinner) findViewById(R.id.goal);
+
 
         CP2Info.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -74,6 +75,17 @@ public class CreateProfile2Activity extends AppCompatActivity {
             }
         });
 
+        bodyType.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                ((TextView) adapterView.getChildAt(0)).setTextColor(Color.WHITE);
+            }
+
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                ((TextView) adapterView.getChildAt(0)).setTextColor(Color.WHITE);
+                return;
+            }
+        });
+
         goal.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 ((TextView) adapterView.getChildAt(0)).setTextColor(Color.WHITE);
@@ -86,23 +98,12 @@ public class CreateProfile2Activity extends AppCompatActivity {
         });
 
 
-        bodyType.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                ((TextView) adapterView.getChildAt(0)).setTextColor(Color.WHITE);
-                Log.d("HELP TAG", bodyType.getSelectedItem().toString());
-            }
-
-            public void onNothingSelected(AdapterView<?> adapterView) {
-                ((TextView) adapterView.getChildAt(0)).setTextColor(Color.WHITE);
-                return;
-            }
-        });
     }
     public void saveUserInfo() {
         SharedPreferences sharedPref = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("activityLevel", activityLevel.getSelectedItem().toString());
-        Log.d("HELP", "TestGoal" + goal);
+        editor.putString("bodyType", bodyType.getSelectedItem().toString());
         editor.putString("goal", goal.getSelectedItem().toString());
         editor.apply();
     }
