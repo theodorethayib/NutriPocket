@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         breakdownButton = (Button) findViewById(R.id.caloricBreakdownButton);
         currentCalories = (TextView) findViewById(R.id.currentCalories);
         currentCalories.setText("You are currently at " + calorieCount + " Calories!");
+        calorieProgressBar.setProgress(calorieCount);
 
 
 

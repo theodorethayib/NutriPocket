@@ -9,4 +9,6 @@
     <color name="emphasisText">#ffffff</color>
     <color name="regularText">#fafafa</color>
 
+    <color name="blue">#0000FF</color>
+
 </resources>
