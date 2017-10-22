@@ -17,6 +17,7 @@ import android.widget.TextView;
 public class CreateProfile2Activity extends AppCompatActivity {
 
     Button CP2Info;
+    Button CP2Info2;
     Button buttonContinue;
     Spinner activityLevel;
     Spinner goal;
@@ -29,6 +30,7 @@ public class CreateProfile2Activity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         CP2Info = (Button) findViewById(R.id.CP2Info);
+        CP2Info2 = (Button) findViewById(R.id.CP2Info2);
         activityLevel = (Spinner) findViewById(R.id.activityLevel);
         goal = (Spinner) findViewById(R.id.goal);
         bodyType = (Spinner) findViewById(R.id.bodyType);
@@ -37,6 +39,14 @@ public class CreateProfile2Activity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(CreateProfile2Activity.this, activityLevelDescriptionsActivity.class);
+                startActivity(intent);
+
+            }
+        });
+        CP2Info2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Intent intent = new Intent(CreateProfile2Activity.this, BodyTypeDescription.class);
                 startActivity(intent);
 
             }
