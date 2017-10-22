@@ -24,6 +24,14 @@
     </string-array>
     <string name="activityLevelPrompt">Activity Level:</string>
 
+    <string name="bodyType">What is your body type?</string>
+    <string-array name="bodyTypeSpinner">
+        <item>&#160;&#160;&#160;&#160;&#160;&#160;&#160;Lose Weight</item>
+        <item>Maintain Weight</item>
+        <item>&#160;&#160;&#160;&#160;&#160;&#160;&#160;Gain Weight</item>
+    </string-array>
+    <string name="bodyTypePrompt">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Body Type:</string>
+
     <string name="goal">What is your goal?</string>
     <string-array name="goalSpinner">
         <item>Lose Weight</item>
@@ -31,6 +39,7 @@
         <item>Gain Weight</item>
     </string-array>
     <string name="goalPrompt">Goal:</string>
+
 
 
 
