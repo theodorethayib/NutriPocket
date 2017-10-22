@@ -12,63 +12,35 @@
         android:id="@+id/view1"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_above="@+id/textView3"
-        android:layout_marginBottom="60dp"
         android:background="@android:color/darker_gray" />
 
     <View
         android:id="@+id/view2"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@android:color/darker_gray"
         android:layout_below="@+id/goal"
-        android:layout_marginTop="40dp"/>
+        android:background="@android:color/darker_gray">
 
     <com.example.theo1.nutripocket.customviews.NoDefaultSpinnerAL
         android:id="@+id/activityLevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="90dp"
-        android:entries="@array/activitySpinner"
-        android:layout_above="@+id/textView3"
-        android:layout_centerHorizontal="true" />
-
-    <LinearLayout
-        android:id="@+id/CP2top"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="41dp"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/CP2Info"
-        android:layout_marginTop="27dp"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-
-    </LinearLayout>
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:entries="@array/activitySpinner" />
 
     <Button
         android:id="@+id/CP2Continue"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
         android:text="@string/CP2Button"
         android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:layout_marginTop="80dp"
-        android:layout_below="@+id/goal"
-        android:layout_centerHorizontal="true" />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/CP2Info"
@@ -83,19 +55,19 @@
         android:id="@+id/goal"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView3"
+        android:layout_above="@+id/CP2Continue"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="57dp"
         android:entries="@array/goalSpinner"
         android:spinnerMode="dropdown" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/CP2Info"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
         android:text="@string/activityLevel"
         android:textAlignment="center"
         android:textColor="@android:color/white"
@@ -106,13 +78,27 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/goal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
         android:text="@string/goal"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="32sp"
-        android:textStyle="italic"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/CP2Info"
+        android:layout_marginTop="54dp"
+        android:text="@string/bodyType"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:textStyle="italic" />
 
 
 </RelativeLayout>
