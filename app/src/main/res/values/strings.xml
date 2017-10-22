@@ -26,11 +26,11 @@
 
     <string name="bodyType">What is your body type?</string>
     <string-array name="bodyTypeSpinner">
-        <item>&#160;&#160;&#160;&#160;&#160;&#160;&#160;Ectomorph</item>
+        <item>Ectomorph</item>
         <item>Mesomorph</item>
-        <item>&#160;&#160;&#160;&#160;&#160;&#160;&#160;Endomorph</item>
+        <item>Endomorph</item>
     </string-array>
-    <string name="bodyTypePrompt">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Body Type:</string>
+    <string name="bodyTypePrompt">Body Type:</string>
 
     <string name="goal">What is your goal?</string>
     <string-array name="goalSpinner">

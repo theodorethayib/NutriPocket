@@ -20,6 +20,7 @@ public class CreateProfile2Activity extends AppCompatActivity {
     Button buttonContinue;
     Spinner activityLevel;
     Spinner goal;
+    Spinner bodyType;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,7 @@ public class CreateProfile2Activity extends AppCompatActivity {
         CP2Info = (Button) findViewById(R.id.CP2Info);
         activityLevel = (Spinner) findViewById(R.id.activityLevel);
         goal = (Spinner) findViewById(R.id.goal);
+        bodyType = (Spinner) findViewById(R.id.bodyType);
 
         CP2Info.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -54,7 +56,6 @@ public class CreateProfile2Activity extends AppCompatActivity {
         activityLevel.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 ((TextView) adapterView.getChildAt(0)).setTextColor(Color.WHITE);
-                Log.d("HELP TAG", activityLevel.getSelectedItem().toString());
             }
 
             public void onNothingSelected(AdapterView<?> adapterView) {
@@ -66,7 +67,19 @@ public class CreateProfile2Activity extends AppCompatActivity {
         goal.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 ((TextView) adapterView.getChildAt(0)).setTextColor(Color.WHITE);
-                Log.d("HELP TAG", goal.getSelectedItem().toString());
+            }
+
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                ((TextView) adapterView.getChildAt(0)).setTextColor(Color.WHITE);
+                return;
+            }
+        });
+
+
+        bodyType.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                ((TextView) adapterView.getChildAt(0)).setTextColor(Color.WHITE);
+                Log.d("HELP TAG", bodyType.getSelectedItem().toString());
             }
 
             public void onNothingSelected(AdapterView<?> adapterView) {
