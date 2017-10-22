@@ -71,27 +71,79 @@
 
         <TextView
             android:id="@+id/carbValueGoal"
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:text="@string/carbValueGoal"
             android:textAlignment="center" />
 
         <TextView
             android:id="@+id/proteinValueGoal"
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="115dp"
-            android:layout_marginRight="115dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
             android:text="@string/proteinValueGoal"
             android:textAlignment="center" />
 
         <TextView
             android:id="@+id/fatValueGoal"
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:text="@string/fatValueGoal"
             android:textAlignment="center" />
 
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/goal"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/goal"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/goal"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -105,7 +157,7 @@
 
         <TextView
             android:id="@+id/carbGoalTitle"
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:text="@string/carbGoalTitle"
             android:textAlignment="center"
@@ -114,10 +166,10 @@
 
         <TextView
             android:id="@+id/proteinGoalTitle"
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="90dp"
-            android:layout_marginRight="90dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
             android:text="@string/proteinGoalTitle"
             android:textAlignment="center"
             android:textColor="@android:color/black"
@@ -125,7 +177,7 @@
 
         <TextView
             android:id="@+id/fatGoalTitle"
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:text="@string/fatGoalTitle"
             android:textAlignment="center"
