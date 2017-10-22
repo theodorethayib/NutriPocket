@@ -32,7 +32,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".CreateProfile2Activity" />
         <activity android:name=".activityLevelDescriptionsActivity" />
-        <activity android:name=".log"></activity>
+        <activity android:name=".log" />
+        <activity android:name=".BodyTypeDescription"></activity>
     </application>
 
 </manifest>
