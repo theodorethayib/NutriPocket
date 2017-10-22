@@ -31,7 +31,6 @@ public class CreateProfileActivity extends AppCompatActivity {
     EditText fName;
     EditText lName;
     EditText age;
-    TextView introText;
     EditText height;
     EditText weight;
     Spinner genderSpin;
@@ -47,9 +46,18 @@ public class CreateProfileActivity extends AppCompatActivity {
         buttonContinue = (Button) findViewById(R.id.CP1Button);
         genderSpin = (Spinner) findViewById(R.id.gender);
 
+        age = (EditText) findViewById(R.id.age);
+        fName = (EditText) findViewById(R.id.nameFirst);
+        lName = (EditText) findViewById(R.id.nameLast);
+        height = (EditText) findViewById(R.id.height);
+        weight = (EditText) findViewById(R.id.weight);
+
         buttonContinue.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                saveUserInfo();
+
                 Intent intent = new Intent(CreateProfileActivity.this, CreateProfile2Activity.class);
+//                intent.putExtra("userInfo", new String[] {age.getText().toString(), weight.getText().toString(), height.getText().toString() } );
                 startActivity(intent);
 
             }
@@ -69,9 +77,8 @@ public class CreateProfileActivity extends AppCompatActivity {
     }
 
         //Save Info
-        public void saveUserInfo(View view) {
-            SharedPreferences sharedPref = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
-
+        public void saveUserInfo() {
+            SharedPreferences sharedPref = getSharedPreferences("userInfo", MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedPref.edit();
             editor.putString("firstName", fName.getText().toString());
             editor.putString("lastName", lName.getText().toString());

@@ -62,6 +62,6 @@
     <string name="fatGoalTitle">Fats</string>
     <string name="buttonCaloricBreakdown">Caloric Breakdown</string>
     <string name="logRect">Log</string>
-    <string name="prefRect">Prefernces</string>
+    <string name="prefRect">Preferences</string>
 
 </resources>
