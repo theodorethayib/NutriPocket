@@ -10,21 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <!-- <activity android:name=".MainActivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
 
 
-        <!--<activity android:name=".MainActivity">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        <!--</activity>-->
-        <!--<activity android:name=".CreateProfileActivity" />-->
-        <!--<activity android:name=".CreateProfile2Activity" />-->
-        <!--<activity android:name=".activityLevelDescriptionsActivity"></activity>-->
-
-
-
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- <activity android:name=".CreateProfileActivity" /> -->
+        <!-- <activity android:name=".CreateProfile2Activity" /> -->
+        <!-- <activity android:name=".activityLevelDescriptionsActivity"></activity> -->
 
         <activity android:name=".CreateProfileActivity">
             <intent-filter>
@@ -35,7 +31,8 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".CreateProfile2Activity" />
-        <activity android:name=".activityLevelDescriptionsActivity"></activity>
+        <activity android:name=".activityLevelDescriptionsActivity" />
+        <activity android:name=".log"></activity>
     </application>
 
 </manifest>
