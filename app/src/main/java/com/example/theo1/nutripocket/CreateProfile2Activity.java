@@ -33,6 +33,7 @@ public class CreateProfile2Activity extends AppCompatActivity {
 
         CP2Info.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+
                 Intent intent = new Intent(CreateProfile2Activity.this, activityLevelDescriptionsActivity.class);
                 startActivity(intent);
 
@@ -43,6 +44,7 @@ public class CreateProfile2Activity extends AppCompatActivity {
 
         buttonContinue.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                saveUserInfo();
                 Intent intent = new Intent(CreateProfile2Activity.this, MainActivity.class);
                 startActivity(intent);
 
@@ -73,11 +75,11 @@ public class CreateProfile2Activity extends AppCompatActivity {
             }
         });
     }
-    public void saveUserInfo(View view) {
+    public void saveUserInfo() {
         SharedPreferences sharedPref = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
-
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("activityLevel", activityLevel.getSelectedItem().toString());
+        Log.d("HELP", "TestGoal" + goal);
         editor.putString("goal", goal.getSelectedItem().toString());
         editor.apply();
     }

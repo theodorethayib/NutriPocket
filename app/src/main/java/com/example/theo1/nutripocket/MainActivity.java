@@ -15,6 +15,7 @@ import static android.util.Log.d;
 public class MainActivity extends AppCompatActivity {
 
     TextView prefTitle;
+    TextView calorieGoal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         prefTitle = (TextView) findViewById(R.id.prefRectTitle);
+        calorieGoal = (TextView) findViewById(R.id.calorieGoal);
+
+
         SharedPreferences sharedPrefs = getSharedPreferences("userInfo", MODE_PRIVATE);
 
         String age = sharedPrefs.getString("age", "");
@@ -33,12 +37,13 @@ public class MainActivity extends AppCompatActivity {
         String goal = sharedPrefs.getString("goal", "");
 
 
-        String[] userInfo = new String[] {height, weight, gender, activityLevel, goal};
+        String[] userInfo = new String[] {age, height, weight, gender, activityLevel, goal};
 
-        prefTitle.setText(age);
+        //prefTitle.setText(age);
 
 
-//        calculateCaloricGoal calGoal = new calculateCaloricGoal(userInfo);
-//        int goalAmount = calGoal.calculate();
+        calculateCaloricGoal calGoal = new calculateCaloricGoal(userInfo);
+        int goalAmount = calGoal.calculate();
+        calorieGoal.setText(String.valueOf(goalAmount));
    }
 }

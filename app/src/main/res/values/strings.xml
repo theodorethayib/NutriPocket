@@ -5,9 +5,9 @@
     <string name="nameLast">Last Name</string>
 
     <string name="age">Age (Year)</string>
-    <string name="genderPrompt">&#160;&#160;Gender:</string>
+    <string name="genderPrompt">Gender:</string>
     <string-array name="genderSpinner">
-        <item>&#160;&#160;&#160;&#160;&#160;Male</item>
+        <item>Male</item>
         <item>Female</item>
     </string-array>
 
@@ -16,21 +16,21 @@
 
     <string name="activityLevel">What is your activity level?</string>
     <string-array name="activitySpinner">
-        <item>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Sedentary</item>
-        <item>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Light Activity</item>
+        <item>Sedentary</item>
+        <item>Light Activity</item>
         <item>Moderate Activity</item>
-        <item>&#160;&#160;&#160;&#160;&#160;&#160;Heavy Activity</item>
-        <item>&#160;&#160;Extreme Activity</item>
+        <item>Heavy Activity</item>
+        <item>Extreme Activity</item>
     </string-array>
-    <string name="activityLevelPrompt">&#160;&#160;&#160;&#160;&#160;&#160;Activity Level:</string>
+    <string name="activityLevelPrompt">Activity Level:</string>
 
     <string name="goal">What is your goal?</string>
     <string-array name="goalSpinner">
-        <item>&#160;&#160;&#160;&#160;&#160;&#160;&#160;Lose Weight</item>
+        <item>Lose Weight</item>
         <item>Maintain Weight</item>
-        <item>&#160;&#160;&#160;&#160;&#160;&#160;&#160;Gain Weight</item>
+        <item>Gain Weight</item>
     </string-array>
-    <string name="goalPrompt">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Goal:</string>
+    <string name="goalPrompt">Goal:</string>
 
 
 
